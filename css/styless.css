@@ -37,3 +37,8 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
 }
+.img{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
