@@ -16,29 +16,31 @@ ul li {
 } 
 .navbar ul li a{
     text-decoration: none;
-    color: dimgray;
     font-weight: bold;
+    
 
 }
 
 ul li a:hover{
-    color: darkgreen;
+    color: skyblue;
 }
 #logo{
     font-size: xx-large;
     color: rgb(16, 103, 164);
     font-weight: bold;
    font-family: 'Times New Roman', Times, serif;
-   padding-left: 50px;
+   padding-left:50px;
+   padding-top: 30px;
 }
 body{
     background-image: url(../max-saeling-_CGxNOLM1gQ-unsplash\ \(1\).jpg);
-    background-size: auto;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-attachment:fixed;
+    background-size: cover;
 }
 .img{
     text-align: center;
     justify-content: center;
     margin-bottom: 80px;
 }
+
