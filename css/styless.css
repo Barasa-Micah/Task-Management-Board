@@ -33,6 +33,7 @@ ul li a:hover{
    padding-left:50px;
    padding-top: 35px;
    cursor: pointer;
+   background-color: darkred;
 }
 body{
     background-image: url(../max-saeling-_CGxNOLM1gQ-unsplash\ \(1\).jpg);
@@ -75,4 +76,6 @@ color: brown;
     color: black;
     background-color: blue;
     cursor: pointer;
+    width: 130px;
+    height: 50px;
  }
