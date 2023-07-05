@@ -70,3 +70,9 @@ color: brown;
     /* font-size: large; */
     margin: 40px 0px;
  }
+ .btn{
+    border-radius: 30px;
+    color: black;
+    background-color: blue;
+    cursor: pointer;
+ }
