@@ -79,7 +79,7 @@ color: brown;
     width: 130px;
     height: 50px;
  }
- .wrapper{
+ .wrapper {
     position: relative;
     width: 400px;
     height: 450px;
@@ -92,9 +92,14 @@ color: brown;
     align-items: center;
     margin-left: 39%;
     margin-top: 10%;
- }
-
- .wrapper .close-icon{
+    transition: height -2s ease;
+  }
+  
+  .wrapper.active {
+    height: 520px;
+  }
+  
+  .wrapper .close-icon {
     position: absolute;
     top: 0;
     right: 0;
@@ -103,72 +108,91 @@ color: brown;
     background: black;
     font-size: 3em;
     color: white;
-    /* justify-content: center; */
-    /* display: flex; */
-    /* overflow: hidden; */
+    overflow: hidden;
     border-bottom-left-radius: 20px;
     cursor: pointer;
-    /* z-index: 1; */
- }
- .wrapper .form-box{
-width: 100%;
-padding: 20px;
- }
-
- .wrapper .form-box.login{
-    display: none;
- }
- .form-box h2{
+  }
+  
+  .wrapper .form-box {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .wrapper .form-box.login {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+  }
+  
+  .wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+  }
+  
+  .wrapper .form-box.register {
+    position: absolute;
+    transform: translateX(400px);
+  }
+  
+  .wrapper.active .form-box.register {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+  }
+  
+  .form-box h2 {
     color: black;
     font-size: 2em;
-    /* text-align: center; */
     padding-left: 60px;
- }
-
- .input-box{
+  }
+  
+  .input-box {
     position: relative;
     width: 80%;
     height: 50px;
     border-bottom: 1px solid;
     margin: 20px;
- }
- /* .input-box label{
+  }
+  
+  .input-box label {
     position: absolute;
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
     pointer-events: none;
-    transition: 0.5s;;
- } */
- .input-box input:focus~label,
- .input-box input:valid~label{
+    transition: 0.5s;
+    font-weight: 600;
+    padding: 0 35px 5px;
+  }
+  
+  .input-box input:focus ~ label,
+  .input-box input:valid ~ label {
     top: -5px;
- }
- .input-box input{
-    height: 0%;
-    width: 0%;
+  }
+  
+  .input-box input {
+    height: 100%;
+    width: 100%;
     background: transparent;
     border: none;
     outline: none;
- }
- .input-box .icon{
+  }
+  
+  .input-box .icon {
     position: absolute;
     right: 10px;
- }
-
- .remember-forgot{
+    font-size: 1.2em;
+    color: black;
+    line-height: 57px;
+  }
+  
+  .remember-forgot {
     font-size: medium;
     display: flex;
     justify-content: space-between;
     margin: 20px 0px 10px;
-    /* text-decoration: underline; */
- }
- /* .remember-forgot a:hover{
-    text-decoration: underline;
- } */
-
- .button{
+  }
+  
+  .button {
     width: 100%;
     height: 30px;
     background: rgb(54, 79, 60);
@@ -179,18 +203,28 @@ padding: 20px;
     color: white;
     font-weight: bold;
     font-size: large;
- }
- .login-register{
+  }
+  
+  .login-register {
     font-weight: 500;
-    font-size: -9em;
+    font-size: 0.9em;
     text-align: center;
     margin: 25px 0px 10px;
- }
- .login-register p a {
+  }
+  
+  .login-register p a {
     color: black;
     text-decoration: none;
     font-weight: 600;
- }
- .login-register p a:hover{
+  }
+  
+  .login-register p a:hover {
     text-decoration: underline;
- }
+  }
+  
+  .remember-forgot a {
+    color: black;
+    text-decoration: none;
+  }
+  
+ 
