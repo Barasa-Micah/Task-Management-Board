@@ -23,7 +23,7 @@ ul li {
 }
 
 ul li a:hover{
-    color: white;
+    color: chocolate;
 }
 #logo{
     font-size: xx-large;
@@ -33,7 +33,7 @@ ul li a:hover{
    padding-left:50px;
    padding-top: 35px;
    cursor: pointer;
-   background-color: darkred;
+   background: darkred;
 }
 body{
     background-image: url(../max-saeling-_CGxNOLM1gQ-unsplash\ \(1\).jpg);
@@ -78,4 +78,16 @@ color: brown;
     cursor: pointer;
     width: 130px;
     height: 50px;
+ }
+ .wrapper{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgb(12, 206, 240);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+
  }
