@@ -18,12 +18,12 @@ ul li {
 .navbar ul li a{
     text-decoration: none;
     font-weight: bold;
-    color: rgb(55, 77, 77);
+    color:blue;
 
 }
 
 ul li a:hover{
-    color: whitesmoke;
+    color: white;
 }
 #logo{
     font-size: xx-large;
@@ -54,13 +54,12 @@ body{
     font-style: oblique;
     padding-top: 15%;
     font-weight: 600;
-    color: fuchsia;
     /* transform: translateY(-50%); */
     /* position: absolute; */
     margin-right: 50%;
  }
  span{
-    color: dodgerblue;
+color: brown;
  }
  h3{
     color: grey;
