@@ -57,12 +57,17 @@ body{
     color: fuchsia;
     /* transform: translateY(-50%); */
     /* position: absolute; */
-    margin-right: 70%;
+    margin-right: 50%;
  }
  span{
     color: dodgerblue;
  }
- h1{
+ h3{
     color: grey;
     font-style: inherit;
+    line-height: 150px;
+ }
+ .text p{
+    /* font-size: large; */
+    margin: 40px 0px;
  }
