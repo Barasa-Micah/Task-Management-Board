@@ -25,3 +25,26 @@ var typed = new Typed (".input",{
 //     wrapper.classList.add('active-popup')
 // })
 
+// Variables
+const loginForm = document.getElementById("loginForm");
+const registrationForm = document.getElementById("registrationForm");
+const loginLink = document.querySelector(".login-link");
+const registerLink = document.querySelector(".register-link");
+
+// Functions
+function showLoginForm() {
+  loginForm.style.display = "block";
+  registrationForm.style.display = "none";
+}
+
+function showRegistrationForm() {
+  loginForm.style.display = "none";
+  registrationForm.style.display = "block";
+}
+
+// Events
+loginLink.addEventListener("click", showLoginForm);
+registerLink.addEventListener("click", showRegistrationForm);
+
+// Initialize
+showLoginForm();
