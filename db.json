@@ -1,0 +1,77 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Micah",
+        "email": "barasamica@gmail.com",
+        "password": "38018271Mica"
+      },
+      {
+        "id": 2,
+        "name": "Cheryl Yegon",
+        "email": "cherylyegon@gmail.com",
+        "password": "cheryl284"
+      },
+      {
+        "id": 3,
+        "name": "Allan Eddy",
+        "email": "allaneddy@gmail.com",
+        "password": "Allan2565"
+      }
+    ],
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Implement user authentication",
+        "description": "Add user login and registration functionality",
+        "dueDate": "2023-07-10",
+        "priority": "high",
+        "status": "incomplete",
+        "assignee": 1,
+        "comments": [
+          {
+            "id": 1,
+            "text": "Remember to handle password encryption",
+            "author": 2,
+            "timestamp": "2023-07-05T10:15:00Z"
+          },
+          {
+            "id": 2,
+            "text": "Good luck with the implementation!",
+            "author": 1,
+            "timestamp": "2023-07-05T11:30:00Z"
+          }
+        ],
+        "attachments": [
+          {
+            "id": 1,
+            "filename": "design_mockup.png",
+            "url": "https://example.com/attachments/design_mockup.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Design task management UI",
+        "description": "Create a user-friendly interface for managing tasks",
+        "dueDate": "2023-07-15",
+        "priority": "medium",
+        "status": "incomplete",
+        "assignee": 1,
+        "comments": [],
+        "attachments": []
+      },
+      {
+        "id": 3,
+        "title": "Implement task tracking functionality",
+        "description": "Allow users to track the progress of their tasks",
+        "dueDate": "2023-07-20",
+        "priority": "low",
+        "status": "incomplete",
+        "assignee": 2,
+        "comments": [],
+        "attachments": []
+      }
+    ]
+  }
+  
