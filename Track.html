@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management</title>
+  <link rel="stylesheet" href="./css/styless.css">
+    <!-- body {
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1, h2 {
+      margin-top: 30px;
+    }
+
+    .task-status {
+      width: 120px;
+    }
+
+    .task-description {
+      white-space: pre-line;
+    } -->
+
+</head>
+<body>
+  <div class="container">
+    <h1>Task Management</h1>
+
+    <h2>Task Status Update</h2>
+    <form id="status-update-form">
+      <div class="form-group">
+        <label for="task-select">Select Task:</label>
+        <select class="form-control" id="task-select" required>
+          <!-- Task options will be dynamically added here -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="status-select">Select Status:</label>
+        <select class="form-control task-status" id="status-select" required>
+          <option value="incomplete">Incomplete</option>
+          <option value="in progress">In Progress</option>
+          <option value="complete">Complete</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Update Status</button>
+    </form>
+
+    <h2>Tasks</h2>
+    <div id="task-list">
+      <!-- Tasks will be dynamically added here -->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
