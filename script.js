@@ -60,12 +60,12 @@ function fetchTasks() {
       });
   }
   
-  // Function to fetch a user by ID
+  //fetching a user by ID
   function getUserById(users, userId) {
     return users.find(user => user.id === userId);
   }
   
-  // Function to create a new task
+  //creating a new task
   function createTask(event) {
     event.preventDefault();
   
@@ -135,4 +135,6 @@ function fetchTasks() {
   // Add event listener to the update status button click event
   const updateStatusButton = document.querySelector('button[type="submit"]');
   updateStatusButton.addEventListener('click', updateTaskStatus);
+  
+
   

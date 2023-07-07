@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SETTING TASK</title>
-    <link rel="stylesheet" href="./css/styless.css">
+  <title>Task Management</title>
+  <link rel="stylesheet" href="./css/styless.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <p id="logo">TASK<br>MB</p>
+  <p id="logo">TASK<br>MB</p>
         <div class="navbar">
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -16,88 +14,76 @@
                 <li><a href="Log-in.html"><button class="btn">LOG-IN</button></a></li>
             </ul>
         </div>
+         <div class="container">
+        <h1>Task Management</h1>
 
-        <!DOCTYPE html>
-<html>
-<head>
-  <title>Task Management</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Task Management</h1>
+        <h2>Create Task</h2>
+        <form id="create-task-form" onsubmit="return createTask()">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea class="form-control" id="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="dueDate">Due Date:</label>
+                <input type="date" class="form-control" id="dueDate" required>
+            </div>
+            <div class="form-group">
+                <label for="priority">Priority:</label>
+                <select class="form-control" id="priority" required>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="assignee">Assignee:</label>
+                <select class="form-control" id="assignee" required>
+                    <option value="1">Micah</option>
+                    <option value="2">Cheryl Yegon</option>
+                    <option value="3">Allan Eddy</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
 
-    <h2>Create Task</h2>
-    <form id="create-task-form">
-      <div class="form-group">
-        <label for="title">Title:</label>
-        <input type="text" class="form-control" id="title" required>
-      </div>
-      <div class="form-group">
-        <label for="description">Description:</label>
-        <textarea class="form-control" id="description" required></textarea>
-      </div>
-      <div class="form-group">
-        <label for="dueDate">Due Date:</label>
-        <input type="date" class="form-control" id="dueDate" required>
-      </div>
-      <div class="form-group">
-        <label for="priority">Priority:</label>
-        <select class="form-control" id="priority" required>
-          <option value="high">High</option>
-          <option value="medium">Medium</option>
-          <option value="low">Low</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="assignee">Assignee:</label>
-        <select class="form-control" id="assignee" required>
-          <option value="1">Micah</option>
-          <option value="2">Cheryl Yegon</option>
-          <option value="3">Allan Eddy</option>
-        </select>
-      </div>
-      <button type="submit" class="btn btn-primary">Create</button>
-    </form>
-
-    <h2>Tasks</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Description</th>
-          <th>Due Date</th>
-          <th>Priority</th>
-          <th>Status</th>
-          <th>Assignee</th>
-          <th>Comments</th>
-          <th>Attachments</th>
-        </tr>
-      </thead>
-      <tbody id="task-list">
-      </tbody>
-    </table>
-  </div>
-  <div class="container">
-    <h2>Task Status Update</h2>
-      <div class="form-group">
-        <label for="task-select">Select Task:</label>
-        <select class="form-control" id="task-select" required>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="status-select">Select Status:</label>
-        <select class="form-control task-status" id="status-select" required>
-          <option value="incomplete">Incomplete</option>
-          <option value="in progress">In Progress</option>
-          <option value="complete">Complete</option>
-        </select>
-      </div>
-      <button type="submit" class="btn btn-primary">Update Status</button>
-    <div id="task-list">
     </div>
-  </div>
-  <script src="script.js"></script>
+    <div class="container">
+        <h2>Task Status Update</h2>
+        <div class="form-group">
+            <label for="task-select">Select Task:</label>
+            <select class="form-control" id="task-select" required>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="status-select">Select Status:</label>
+            <select class="form-control task-status" id="status-select" required>
+                <option value="incomplete">Incomplete</option>
+                <option value="in progress">In Progress</option>
+                <option value="complete">Complete</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="updateStatus()">Update Status</button>
+        <div id="task-list">
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+        // Display an alert message when the status is updated
+        function updateStatus() {
+            alert("Task status updated. Stay focused and complete your tasks!");
+        }
+
+        // Function to prompt an alert message when a task is created
+        function createTask() {
+            alert("Task created successfully. Stay organized and stay on track!");
+            return true; // Allow form submission
+        }
+    </script>
 </body>
 </html>
 </body>
