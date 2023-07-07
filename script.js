@@ -7,3 +7,8 @@ var typed = new Typed (".input",{
     loop:true
 })
     
+//Fetching data
+
+function fetchTaskData(){
+    fetch()
+}
